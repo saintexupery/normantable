@@ -1,0 +1,8 @@
+# Mac
+.DS_Store
+
+# virtualenv
+venv/
+
+# pycache
+__pycache__/
