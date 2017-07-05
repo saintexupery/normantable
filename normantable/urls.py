@@ -17,14 +17,16 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from search import urls as search_urls
 from normantable.views import (
     search_index,
 )
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^api/search/', include(search_urls, namespace='search_urls')),
+
+    # api urls
+    url(r'^api/docs/', include('rest_framework_docs.urls')),
+    url(r'^api/search/', include('search.urls', namespace='search_urls')),
 
     # search_urls
     url(r'^search/index/$', search_index, name='search_index'),
