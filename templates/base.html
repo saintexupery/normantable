@@ -1,0 +1,21 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta content='width=device-width, initial-scale=0.8, user-scalable=no' name='viewport'>
+
+    <script src="{% static 'js/search_index.js' %}" data-turbolinks-track="true"></script>
+
+    {% block head %}
+    {% endblock %}
+
+  </head>
+
+  <body>
+
+    {% block body %}
+    {% endblock %}
+
+  </body>
+</html>

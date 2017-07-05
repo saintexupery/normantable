@@ -1,25 +1,19 @@
-<!DOCTYPE html>
-<html>
-  <head>
+{% extends 'base.html' %}
 
-    <meta charset="utf-8">
+{% block head %}
+  <title>Search Engine</title>
+{% endblock %}
 
-    <title>Search Engine</title>
+{% block body%}
+  <div class="container">
+    <div class="jumbotron">
+      <input type="text" maxlength="2048" />
+      <button type="button">검색</button>
+    </div>
 
-  </head>
+    <footer class="footer">
+      <p>&copy; Simon Min, powered by Django</p>
+    </footer>
 
-  <body>
-
-    <div class="container">
-      <div class="jumbotron">
-        <input type="text" maxlength="2048" />
-        <button type="button">검색</button>
-      </div>
-
-      <footer class="footer">
-        <p>&copy; Simon Min, powered by Django</p>
-      </footer>
-
-    </div> <!-- /container -->
-  </body>
-</html>
+  </div> <!-- /container -->
+{% endblock %}
