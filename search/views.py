@@ -1,3 +1,3 @@
 from django.shortcuts import render
 
-# Create your views here.
+from search.models import SearchWord
