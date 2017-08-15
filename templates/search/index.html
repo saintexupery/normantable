@@ -4,16 +4,27 @@
   <title>Search Engine</title>
 {% endblock %}
 
-{% block body%}
+{% block body %}
   <div class="container">
-    <div class="jumbotron">
-      <input type="text" maxlength="2048" />
-      <button type="button">검색</button>
+    <div class="search_options">
+      <span class="search_option" id="google">Google</span>
+      <span class="search_option" id="naver">Naver</span>
+      <span class="search_option" id="daum">Daum</span>
+      <span class="search_option" id="naver_dict">NDICT</span>
+    </div>
+
+    <div class="search_box">
+      <input type="text" name="search_word" class="word" id="w" maxlength="2048" />
+      <button type="button" name="search_button" class="button" id="b">검색</button>
     </div>
 
     <footer class="footer">
-      <p>&copy; Simon Min, powered by Django</p>
+      <p>&copy; NormanTable, powered by Django</p>
     </footer>
 
   </div> <!-- /container -->
 {% endblock %}
+
+<script type="text/javascript">
+
+</script>
